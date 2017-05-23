@@ -6,21 +6,16 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
-  <title>Wallstreet Bets Simulator</title>
+
+  <title>Zeta Chi Epsilon</title>
 </head>
 
 <body>
+  <%= erb :_navbar %>
   <div class="container">
-    <header role="banner">
-      <a class="title" href="/">Wallstreet Bets</a>
-      <a href="/new-entry-form" class="signup button">sign up</a>
-    </header>
 
     <%= yield %>
 
-    <footer role="siteinfo">
-      <span class="legal">Created by Patrick Tangphao 2017</span>
-    </footer>
   </div>
 </body>
 </html>
