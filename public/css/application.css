@@ -92,3 +92,19 @@ h1 {
 h2 {
   text-align: center;
 }
+
+.cabinet {
+  width: 100%;
+}
+
+::-webkit-scrollbar { 
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb        { 
+  background-color: black;
+}
+
+::-webkit-scrollbar-corner { 
+  background-color: red;
+}
