@@ -7,6 +7,7 @@ get '/home' do
 end
 
 get '/about' do
+	@crosses = Cross.all
 	erb :'main_pages/about'
 end
 

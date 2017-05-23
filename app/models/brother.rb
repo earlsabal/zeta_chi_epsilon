@@ -1,3 +1,3 @@
 class Brother < ApplicationRecord
-  # Remember to create a migration!
+  belongs_to :cross
 end

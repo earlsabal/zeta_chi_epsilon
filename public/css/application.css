@@ -75,7 +75,12 @@ li a:hover {
 }
 
 .scroll-box {
-  overflow:scroll
+  height: 510px;
+  overflow:scroll;
+}
+
+.brother{
+  margin-left: 35%;
 }
 
 h1 {
