@@ -1,0 +1,7 @@
+<h1 class="box">News</h1>
+
+<% fb_posts["data"].each do |post| %>
+	<% if post["message"] != nil %>
+		<li class="box fb-posts"><%= post["message"] %></li>
+	<% end %>
+<% end %>
