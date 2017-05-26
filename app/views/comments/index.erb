@@ -1,0 +1,12 @@
+<h1 class="box">Comments</h1>
+
+<div class="comments-container">
+	<% @comments.each do |comment| %>
+		<div class="box">
+			<p><%= comment.body %></p>
+			<p>Posted by: <%= comment.author %></p>
+		</div>
+	<% end %>	
+</div>
+
+<%= erb :'comments/_form' %>
