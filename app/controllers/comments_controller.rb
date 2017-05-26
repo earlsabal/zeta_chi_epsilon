@@ -7,7 +7,11 @@ end
 post '/comments' do
   @comment = Comment.new(params[:comment])
   if @comment.save
-    redirect '/comments'
+    if request.xhr?
+      erb :'comments/_comment', layout: false, locals: {comment: @comment}
+    else
+      redirect '/comments'
+    end
   else
     erb :register
   end
