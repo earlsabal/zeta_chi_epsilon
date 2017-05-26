@@ -130,3 +130,13 @@ td {
 th {
   font-style: unset;
 }
+
+.fb-posts {
+  list-style-type: none;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}

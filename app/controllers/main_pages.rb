@@ -14,3 +14,8 @@ end
 get '/contact' do
 	erb :'main_pages/contact'
 end
+
+get '/news' do
+	# p fb_posts["data"]
+	erb :'main_pages/news'
+end

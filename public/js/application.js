@@ -1,7 +1,16 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+	// $.ajaxSetup({ cache: true });
+	// $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
+	// 	FB.api(
+	// 	  '/446871372186163/feed',
+	// 	  'GET',
+	// 	  {},
+	// 	  function(response) {
+	// 	      // Insert your code here
+	// 	  }
+	// 	);
+		
+	// })
+
 });

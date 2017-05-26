@@ -1,0 +1,6 @@
+require 'httparty'
+helpers do
+	def fb_posts
+		HTTParty.get("https://graph.facebook.com/v2.9/446871372186163/posts?access_token=EAACEdEose0cBANwrZBy2PY8uZC9bCsl2erDyl6w1LimtqTEDIoDFRn5ChiBJBtZB8VYs6GCaZCdJ1E7Ya5FZA4zPhNcfmkxbdpRR7a3a68iqpJZADM5vS35vHxHD9YCo5yw9O0F2eYP88YpQXJOrzbdSqpfASr1iotnYCbfzg9Pu4YdE5EHKGs")
+	end
+end
