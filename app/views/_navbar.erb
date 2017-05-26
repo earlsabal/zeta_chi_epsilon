@@ -5,5 +5,15 @@
     <li class="nav-link"><a href="/contact">Contact</a></li>
     <li class="nav-link"><a href="/news">News</a></li>
     <li class="nav-link"><a href="/photos">Photos</a></li>
+    <% if logged_in? %>
+    <li class="nav-link logout-item">
+    	<form class="logout-button" action="/logout" method="POST">
+    		<input type="hidden" name="_method" value="delete">
+    		<input type="submit" value="Logout" class="logout-button">
+    	</form>
+    </li>
+    <% else %>
+    <li class="nav-link"><a href="/sessions/new">Login</a></li>
+    <% end %>
   </ul>  
 </div>

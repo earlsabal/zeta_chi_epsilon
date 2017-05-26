@@ -37,19 +37,14 @@ ul {
 
 .nav-link {
     float: left;
+    padding: 14px 16px;
 }
 
 .nav-link a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.nav-link a:hover {
-    background-color: gray;
 }
 
 .container {
@@ -137,7 +132,7 @@ th {
 }
 
 iframe {
-  width: 100%;
+  width: 95%;
   height: 500px;
 }
 
@@ -145,4 +140,25 @@ iframe {
   width: 80%;
   display: block;
   margin: auto;
+}
+
+.login-form {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.logout-button {
+  background:none;
+  color:inherit;
+  border:none; 
+  padding: 0;
+  font: inherit;
+  display: block;
+  color: white;
+  text-align: center; 
+}
+
+
+.nav-link:hover {
+    background-color: gray;
 }

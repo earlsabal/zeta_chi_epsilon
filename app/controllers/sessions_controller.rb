@@ -3,21 +3,21 @@ get '/sessions-view' do
 end
 
 get '/sessions/new' do
-  erb :"sessions/new"
+  erb :"admin/login"
 end
 
 post '/sessions' do
-  @user = User.authenticate(params[:email], params[:password])
-  if @user
-    login(@user)
-    redirect "/users/#{@user.id}"
+  @admin = Admin.authenticate(params[:username], params[:password])
+  if @admin
+    login(@admin)
+    redirect "/home"
   else
     @errors = true
-    erb :"sessions/new"
+    erb :"admin/login"
   end
 end
 
 delete '/logout' do
-  session.delete(:user_id)
+  logout
   redirect '/sessions/new'
 end

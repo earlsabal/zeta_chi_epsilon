@@ -1,18 +1,13 @@
 helpers do
-  def login(user)
-    session[:id] = user.id
+  def login(admin)
+    session[:admin_id] = admin.id
   end
 
   def logout
-    session[:id] = nil
+    session.delete(:admin_id)
   end
 
   def logged_in?
-    !!current_user
+    session[:admin_id] != nil
   end
-
-  def current_user
-    @current_user ||= User.find(session[:id]) if session[:id]
-  end
-
 end
