@@ -19,3 +19,8 @@ get '/news' do
 	# p fb_posts["data"]
 	erb :'main_pages/news'
 end
+
+get '/photos' do
+	@photos = photo_posts.css('.featured_image_standalone')
+	erb :'main_pages/photos'
+end
