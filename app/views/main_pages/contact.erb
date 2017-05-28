@@ -138,27 +138,32 @@
 		<tr>
 			<td><img class="avatar" src="<%= find_chancellor.display_picture %>" alt="No Profile"></td>
 			<td><img class="avatar" src="<%= find_ritual.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_webmaster.display_picture %>" alt="No Profile"></td>
 		</tr>
 
 		<tr>
 			<th>Chancellor</th>
 			<th>Ritual</th>
+			<th>Web Master</th>
 		</tr>
 
 		<tr>
 			<td><%= find_chancellor.brother.full_name %></td>
 			<td><%= find_ritual.brother.full_name %></td>
+			<td><%= find_webmaster.brother.full_name %></td>
 		</tr>
 
 		<tr>
 			<td><%= find_chancellor.display_email %></td>
 			<td><%= find_ritual.display_email %></td>
+			<td><%= find_webmaster.display_email %></td>
 		</tr>
 
 		<% if logged_in? %>
 			<tr>
 				<td><a href="/positions/<%= find_chancellor.id %>/edit">Edit</a></td>
 				<td><a href="/positions/<%= find_ritual.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_webmaster.id %>/edit">Edit</a></td>
 			</tr>
 		<% end %>
 

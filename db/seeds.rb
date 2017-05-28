@@ -148,6 +148,7 @@ Brother.create(scroll_number: "116", full_name: "Charlie Boado", cross_id: 28)
 Brother.create(scroll_number: "117", full_name: "Joshua Lawas", cross_id: 28)
 Brother.create(scroll_number: "118", full_name: "Joey Ma", cross_id: 28)
 
+
 Position.create(name: "Pledge Lord", brother_id: 80)	
 Position.create(name: "President", brother_id: 80)	
 Position.create(name: "Vice President", brother_id: 80)	

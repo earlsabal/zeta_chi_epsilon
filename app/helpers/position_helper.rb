@@ -56,4 +56,8 @@ helpers do
 		Position.find_by(name: "Ritual")
 	end
 
+	def find_webmaster
+		Position.find_by(name: "Web Master")
+	end
+
 end
