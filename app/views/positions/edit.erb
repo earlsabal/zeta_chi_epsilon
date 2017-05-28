@@ -1,0 +1,18 @@
+<h1 class="box">Update <%= @position.name %></h1>
+
+<form action="/positions/<%= @position.id %>" method="post" class="box">	 
+  <input type="hidden" name="_method" value="put">
+
+	<label>Picture URL:</label>
+	<input type="text" name="position[picture]" value="<%= @position.picture %>">
+
+	<label>Scroll:</label>
+	<input type="text" name="scroll_number" value="<%= @position.brother.scroll_number %>">
+
+	<label>Email:</label>
+	<input type="text" name="position[email]" value="<%= @position.email %>">
+
+	<input type="hidden" name="position[name]" value="<%= @position.name %>">
+
+	<input type="submit" value="Update Item">
+</form>

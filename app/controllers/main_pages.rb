@@ -21,7 +21,7 @@ get '/news' do
 end
 
 get '/photos' do
-	@photos = photo_posts.css('.featured_image_standalone')
+	@photos = all_photos
 	erb :'main_pages/photos'
 end
 

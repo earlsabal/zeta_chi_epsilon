@@ -1,0 +1,6 @@
+	<% if logged_in? %>
+		<form action="/comment/<%= comment.id %>" method="POST">
+  		<input type="hidden" name="_method" value="delete">
+  		<input type="submit" value="Delete">
+  	</form>
+	<% end %>

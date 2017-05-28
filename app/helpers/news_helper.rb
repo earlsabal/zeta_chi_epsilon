@@ -1,7 +1,5 @@
 helpers do
 	def fb_posts
-		HTTParty.get("https://graph.facebook.com/v2.9/446871372186163/posts?access_token=EAACEdEose0cBALneDs2TuX2DWxF7K4ubA1FZCznP7dsmZAvBZBcTCmJUccsbHY5wx51RwB32LV0ExDz4Lbi3oBo3VZBycWnmNV2ZBhALbZCQaE7qdZAePNs0YxDK3DUwPcmmKdXMqjm17UZBl7Pt42nt3YcMU3ISZCRJvs8m8fHTmVzZBaZAVKp5YLl")
+		HTTParty.get("https://graph.facebook.com/v2.9/446871372186163/posts?access_token=EAACEdEose0cBAP3f0KSPMmks20kAgwQZALX6PIaZBLPNkCPYMZCVrJktbmhDYEyRBGpGTLKDpnpCgUJFdnZCXxGoZAkI5B6KtuYc5tRninZCWMyZC33K5beIwlp1tdwP8YUdoeIAat3D8OyjZBmiHZCUqcJt9imgcSPBbwrsZA2G3oALleSgp5eHJ1")
 	end
 end
-
- 
