@@ -1,6 +1,6 @@
 <% crosses.each do |cross| %>
-	<h3 class="brother"><%= cross.greek_class %></h3>
-	<h4 class="brother"><%= cross.semester %> <%= cross.year %></h4>
+	<h3 class="brother greek-class"><%= cross.greek_class %></h3>
+	<h3 class="brother semester-crossed"><%= cross.semester %> <%= cross.year %></h3>
 	<% cross.brothers.each do |brother| %>
 		<p class="brother"><%= brother.scroll_number %> <%= brother.full_name %></p>
 	<% end %>

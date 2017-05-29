@@ -2,6 +2,12 @@
 
 <ul>
 	<% @photos.each do |photo| %>
-		<li class="box photos"><%= photo %></li>
+		<% if !photo(photo).empty? %>
+			<div class="box">
+				<li class="photos"><%= photo(photo) %></li>	
+				<li class="photo-content"><%= content(photo) %></li>
+			</div>
+		<% end %>
+
 	<% end %>
 </ul>

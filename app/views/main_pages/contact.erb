@@ -8,9 +8,9 @@
 
 	
 		<tr>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_pledge_lord.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_president.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_vice_president.display_picture %>" alt="No Profile"></td>
 		</tr>
 
 		<tr>
@@ -20,15 +20,29 @@
 		</tr>
 
 		<tr>
-			<td><%= find_pledge_lord.full_name %></td>
-			<td><%= find_president.full_name %></td>
-			<td><%= find_vice_president.full_name %></td>
+			<td><%= find_pledge_lord.brother.full_name %></td>
+			<td><%= find_president.brother.full_name %></td>
+			<td><%= find_vice_president.brother.full_name %></td>
 		</tr>
 
-				<tr>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
+		<tr>
+			<td><%= find_pledge_lord.display_email %></td>
+			<td><%= find_president.display_email %></td>
+			<td><%= find_vice_president.display_email %></td>
+		</tr>
+
+		<% if logged_in? %>
+			<tr>
+				<td><a href="/positions/<%= find_pledge_lord.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_president.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_vice_president.id %>/edit">Edit</a></td>
+			</tr>
+		<% end %>
+
+		<tr>
+			<td><img class="avatar" src="<%= find_publicity.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_fundraiser.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_philanthropy.display_picture %>" alt="No Profile"></td>
 		</tr>
 
 		<tr>
@@ -38,15 +52,29 @@
 		</tr>
 
 		<tr>
-			<td><%= find_publicity.full_name %></td>
-			<td><%= find_fundraiser.full_name %></td>
-			<td><%= find_philanthropy.full_name %></td>
+			<td><%= find_publicity.brother.full_name %></td>
+			<td><%= find_fundraiser.brother.full_name %></td>
+			<td><%= find_philanthropy.brother.full_name %></td>
 		</tr>
 
 		<tr>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
+			<td><%= find_publicity.display_email %></td>
+			<td><%= find_fundraiser.display_email %></td>
+			<td><%= find_philanthropy.display_email %></td>
+		</tr>
+
+		<% if logged_in? %>
+			<tr>
+				<td><a href="/positions/<%= find_publicity.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_fundraiser.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_philanthropy.id %>/edit">Edit</a></td>
+			</tr>
+		<% end %>
+
+		<tr>
+			<td><img class="avatar" src="<%= find_social_chair.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_treasurer.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_secretary.display_picture %>" alt="No Profile"></td>
 		</tr>
 
 		<tr>
@@ -56,15 +84,29 @@
 		</tr>
 
 		<tr>
-			<td><%= find_social_chair.full_name %></td>
-			<td><%= find_treasurer.full_name %></td>
-			<td><%= find_secretary.full_name %></td>
+			<td><%= find_social_chair.brother.full_name %></td>
+			<td><%= find_treasurer.brother.full_name %></td>
+			<td><%= find_secretary.brother.full_name %></td>
 		</tr>
 
 		<tr>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
+			<td><%= find_social_chair.display_email %></td>
+			<td><%= find_treasurer.display_email %></td>
+			<td><%= find_secretary.display_email %></td>
+		</tr>
+
+		<% if logged_in? %>
+			<tr>
+				<td><a href="/positions/<%= find_social_chair.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_treasurer.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_secretary.id %>/edit">Edit</a></td>
+			</tr>
+		<% end %>
+
+		<tr>
+			<td><img class="avatar" src="<%= find_brotherhood.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_academics.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_liason.display_picture %>" alt="No Profile"></td>
 		</tr>
 
 		<tr>
@@ -74,25 +116,57 @@
 		</tr>
 
 		<tr>
-			<td><%= find_brotherhood.full_name %></td>
-			<td><%= find_academics.full_name %></td>
-			<td><%= find_liason.full_name %></td>
+			<td><%= find_brotherhood.brother.full_name %></td>
+			<td><%= find_academics.brother.full_name %></td>
+			<td><%= find_liason.brother.full_name %></td>
 		</tr>
 
 		<tr>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
-			<td><img class="avatar" src="images/no-profile.gif" alt="No Profile"></td>
+			<td><%= find_brotherhood.display_email %></td>
+			<td><%= find_academics.display_email %></td>
+			<td><%= find_liason.display_email %></td>
+		</tr>
+
+		<% if logged_in? %>
+			<tr>
+				<td><a href="/positions/<%= find_brotherhood.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_academics.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_liason.id %>/edit">Edit</a></td>
+			</tr>
+		<% end %>
+
+		<tr>
+			<td><img class="avatar" src="<%= find_chancellor.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_ritual.display_picture %>" alt="No Profile"></td>
+			<td><img class="avatar" src="<%= find_webmaster.display_picture %>" alt="No Profile"></td>
 		</tr>
 
 		<tr>
 			<th>Chancellor</th>
 			<th>Ritual</th>
+			<th>Web Master</th>
 		</tr>
 
 		<tr>
-			<td><%= find_chancellor.full_name %></td>
-			<td><%= find_ritual.full_name %></td>
+			<td><%= find_chancellor.brother.full_name %></td>
+			<td><%= find_ritual.brother.full_name %></td>
+			<td><%= find_webmaster.brother.full_name %></td>
 		</tr>
+
+		<tr>
+			<td><%= find_chancellor.display_email %></td>
+			<td><%= find_ritual.display_email %></td>
+			<td><%= find_webmaster.display_email %></td>
+		</tr>
+
+		<% if logged_in? %>
+			<tr>
+				<td><a href="/positions/<%= find_chancellor.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_ritual.id %>/edit">Edit</a></td>
+				<td><a href="/positions/<%= find_webmaster.id %>/edit">Edit</a></td>
+			</tr>
+		<% end %>
+
 	</table>
 </div>
 	

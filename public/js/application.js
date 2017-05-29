@@ -1,16 +1,25 @@
 $(document).ready(function() {
-
-	// $.ajaxSetup({ cache: true });
-	// $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
-	// 	FB.api(
-	// 	  '/446871372186163/feed',
-	// 	  'GET',
-	// 	  {},
-	// 	  function(response) {
-	// 	      // Insert your code here
-	// 	  }
-	// 	);
-		
-	// })
-
+	commentListener();
 });
+
+var commentListener = function() {
+	  $('.comment-form').submit(function(event) {
+    event.preventDefault();
+
+    var $form = $(this);
+
+    $.ajax({
+      url: $form.attr('action'),
+      method: $form.attr('method'),
+      data: $form.serialize()
+    })
+
+    .done(function(response) {
+      $('.comments-container').append(response);
+    })
+
+    .fail(function() {
+      alert('Uh oh, something went wrong')
+    })
+  });
+}
