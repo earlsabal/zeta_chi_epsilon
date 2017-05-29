@@ -1,5 +1,5 @@
 <div class="box">
 	<p><%= comment.body %></p>
 	<p>Posted by: <%= comment.author %></p>
-	<%= erb :'comments/_form' %>
+	<%= erb :'comments/_form', locals: {comment: comment} %>
 </div>
