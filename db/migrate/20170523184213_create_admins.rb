@@ -3,6 +3,8 @@ class CreateAdmins < ActiveRecord::Migration[5.0]
   	create_table :admins do |t|
   		t.string :username, null:false
   		t.string :password_hash
+
+  		t.timestamps
   	end
   end
 end

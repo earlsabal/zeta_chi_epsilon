@@ -1,5 +1,6 @@
 <div class="box">
 	<p><%= comment.body %></p>
 	<p>Posted by: <%= comment.author %></p>
+	<p>Posted on: <%= comment.created_at %></p>
 	<%= erb :'comments/_form', locals: {comment: comment} %>
 </div>

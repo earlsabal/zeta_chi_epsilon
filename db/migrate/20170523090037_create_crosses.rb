@@ -4,6 +4,8 @@ class CreateCrosses < ActiveRecord::Migration[5.0]
   		t.string	:greek_class, null: false
   		t.string  :semester
   		t.integer :year
+
+  		t.timestamps
   	end
   end
 end

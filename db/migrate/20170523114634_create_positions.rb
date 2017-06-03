@@ -5,6 +5,8 @@ class CreatePositions < ActiveRecord::Migration[5.0]
   		t.string :email
   		t.string :picture
   		t.references :brother
+
+  		t.timestamps
   	end
   end
 end
