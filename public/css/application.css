@@ -105,7 +105,7 @@ h2 {
   width: 100%;
 }
 
-::-webkit-scrollbar { 
+/*::-webkit-scrollbar { 
   background-color: transparent;
   border-radius: 5%
 }
@@ -116,7 +116,7 @@ h2 {
 
 ::-webkit-scrollbar-corner { 
   background-color: transparent;
-}
+}*/
 
 td {
   text-align: center;
@@ -176,4 +176,24 @@ iframe {
 
 .semester-crossed {
   font-weight: bold;
+}
+
+ul.footer-icons {
+  list-style-type: none;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  color: white;
+}
+
+.icon img{
+  width: 50px;
+  height: 50px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 10px;
 }
