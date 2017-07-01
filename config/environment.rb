@@ -17,7 +17,6 @@ require 'logger'
 require 'bcrypt'
 require 'httparty'
 require 'json'
-require 'nokogiri'
 require 'sinatra'
 require "sinatra/reloader" if development?
 
