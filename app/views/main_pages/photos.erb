@@ -4,7 +4,7 @@
 	<% @photos.each do |photo| %>
 		<% if !photo(photo).empty? %>
 			<div class="box">
-				<li class="photos"><%= photo(photo) %></li>	
+				<li class="photos"><img src=<%= photo(photo) %> alt="Post"></li>	
 				<li class="photo-content"><%= content(photo) %></li>
 			</div>
 		<% end %>
