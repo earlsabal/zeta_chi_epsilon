@@ -1,10 +1,12 @@
 <h1 class="box">Comments</h1>
 
-<div class="comments-container">
-	<% @comments.each do |comment| %>
-		<%= erb :'comments/_comment', locals: {comment: comment} %>
-	<% end %>	
-</div>
+<% if @comments != nil %>
+  <div class="comments-container">
+    <% @comments.each do |comment| %>
+      <%= erb :'comments/_comment', locals: {comment: comment} %>
+    <% end %> 
+  </div>
+<% end %>
 
 <h3>New Comment:</h3>
 
