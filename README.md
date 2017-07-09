@@ -1,32 +1,35 @@
-### Basic Table Information
-User
-  ID
-  Username
-  Email
-  Password
-  Balance
+# Zeta Chi Epsilon
 
-Position
-  ID
-  Ticker
-  Amount
-  Type
-  Datetime
+![](ZXE-Banner.jpg?raw=true)
 
+A website for a collegiate organization made using Ruby with Sinatra.  Administrator options are available once a trusted user logs in.
 
-### Description
+## Home Page
 
-Users can register, log in, log out, see trades, balances.
-Views
-Index -
+![](screenshots/home.png?raw=true)
 
-Trades
+Displays a home-made video made by the organization.
 
-### Using HTTParty
-```
-require 'httparty'
+## About
 
-url = 'https://api.spotify.com/v1/search?type=artist&q=tycho'
-response = HTTParty.get(url)
-response.parsed_response
-```
+![](screenshots/about.png?raw=true)
+
+Displays the history and philosophy along with every member that is a part of this chapter.
+
+## Contact
+
+![](screenshots/contact.png?raw=true)
+
+Displays the active members holding a position along with a picture, their name, position and email.
+
+## Photos
+
+![](screenshots/photos.png?raw=true)
+
+Displays recent photos from the organization sourced from their instagram feed.
+
+## Comments
+
+![](screenshots/comments.png?raw=true)
+
+Allows users a chance to leave feedback about the organization
